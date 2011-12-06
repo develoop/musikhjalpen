@@ -7,9 +7,9 @@
 		public function __construct() {
 			$this->sql = new sql;	 
 		}
-		public function getInfo($id) {
+		public function getInfo($id, $callback) {
 			$info = $this->sql->_array("SELECT * FROM bloggare WHERE id = '$id'");
-			$json = '{"id":"' . $info[0]['id'] . '","namn":"' . $info[0]['namn'] . '","bild":"' . $info[0]['bild'] . '","insamling":"' . $info[0]['insamling'] . '","url":"' . $info[0]['url'] . '"}';
+			$json = $callback . '({"id":"' . $info[0]['id'] . '","namn":"' . $info[0]['namn'] . '","bild":"' . $info[0]['bild'] . '","insamling":"' . $info[0]['insamling'] . '","url":"' . $info[0]['url'] . '"})';
 			return $json;
 		}
 				
@@ -19,7 +19,7 @@
 		// id - namn - bild - insamling - url
 		//!!!! OBS, INSAMLING kommer bytas ut mot SALDO när jag fått tag på min lokaladatabasdump
 		$widget = new widget;
-		$widgetInfo = $widget->getInfo($_GET['id']);	
+		$widgetInfo = $widget->getInfo($_GET['id'], $_GET['callback']);	
 	} else {
 		$widgetInfo = '{"error":"No id"}';
 	}
