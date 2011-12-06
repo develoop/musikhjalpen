@@ -24,6 +24,6 @@
 		$widgetInfo = '{"error":"No id"}';
 	}
 	//echo "<img src=\"../images/bloggare/" . $widgetInfo[0]['bild'] . "\" />";
-	echo $widgetInfo;
+	return $widgetInfo;
 
 ?>
