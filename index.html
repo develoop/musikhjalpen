@@ -8,17 +8,78 @@
 		<script src="assets/js/toplist.js"></script>
 		<script src="assets/js/custom.js"></script>
 		
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 		<link rel="stylesheet" type="text/css" href="assets/js/facebox/facebox.css" />
 </head>
 <body>
     
 	<div id="page">
 		
-		<ul id="toplist">
-			<a class="show_more" href="#">Top 100</a>
-		</ul>
+		<div id="header">
+			<div id="banner">
+				<h1>MUSIKHJÄLPEN</h1>
+				<h3>2011</h3>
+			</div>
+			<div id="subheader">
+				<div class="one_third img_holder">
+					
+				</div>
+				<div class="two_thirds">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit massa, pellentesque vel vulputate ac, malesuada ut tellus. Donec rhoncus pharetra mi et placerat. Curabitur scelerisque libero vel ligula bibendum non accumsan sapien tristique. In urna quam, auctor non molestie at, ullamcorper eu justo. Nunc eu purus nisi, nec tincidunt justo. Quisque eget massa massa. Morbi pretium consequat elementum.</p>
+
+
+					<p>Sed vitae diam ac dolor consectetur eleifend eget et lacus. Sed lacinia lacus a tellus accumsan ultrices. Proin fringilla tincidunt orci eu facilisis. Quisque facilisis eros sit amet eros volutpat porttitor. In porttitor cursus tortor, eu consectetur odio elementum non. Quisque eu volutpat ligula. Sed vel sapien ut augue pulvinar aliquam sed quis velit. Sed at enim ipsum. Donec non quam dolor, id facilisis diam. Cras condimentum nunc et quam blandit gravida. Aliquam suscipit, ante non ullamcorper condimentum, turpis odio fermentum nibh, ac mattis enim dui sit amet nunc. Ut a magna neque, a porta justo. Nunc iaculis fermentum nunc nec dapibus.</p>
+				</div>
+			</div>
+		</div>
 		
-		<div id="toplist_box" style="display:none"></div>
+		<div id="content">
+			<div class="one_third">
+				<h2>Skänk direkt</h2>
+				
+				<p>Fyll i ditt telefonnummer för att skänka 50kr direkt till Musikhjälpen!</p>
+				
+				<form id="give_direct" name="give_direct" action="php/formhandler.php">
+					<input type="text" name="name" placeholder="NAMN" />
+					<input type="text" name="mobile" placeholder="MOBILNUMMER" />
+					<button type="submit">Skicka!</button>
+				</form>
+			</div>
+			<div class="one_third">
+				<h2>Starta en egen insamling</h2>
+				
+				<form id="start_collect" name="start_collect" action="php/formhandler.php">
+					<fieldset>
+						<legend>PERSONUPPGIFTER</legend>
+						
+						<input type="text" name="name" placeholder="NAMN" />
+						<input type="email" name="email" placeholder="E-POST" />
+						<input type="text" name="mobile" placeholder="MOBILNUMMER" />
+						<input type="password" name="password" placeholder="LÖSENORD" />
+						<input type="password" name="confirm_password" placeholder="LÖSENORD IGEN" />
+					</fieldset>
+					<fieldset>
+						<legend>VÄLJ BELOPP</legend>
+						
+						<select name="amount">
+							<option>10kr</option>
+							<option>20kr</option>
+							<option>50kr</option>
+							<optoin>100kr</option>
+						</select>
+					</fieldset>
+					
+					<button type="submit">Starta!</button>
+					
+				</form>
+			</div>
+			<div class="one_third">
+				<h2>Blogglistan</h2>
+				<ul id="toplist">
+					<a class="show_more" href="#">Visa fler</a>
+				</ul>
+			</div>
+		</div>
 		
 	</div>
 

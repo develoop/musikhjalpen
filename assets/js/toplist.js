@@ -55,6 +55,14 @@
         
         $.facebox(buildList(response));
         
+        $('#facebox li').click(function(){
+          
+          var id = $(this).attr('data-id');
+          
+          buildDetailsLightbox(id);
+          
+        });
+        
       });
       
     });
