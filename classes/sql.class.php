@@ -1,4 +1,4 @@
-<?
+<?php
 
 class sql {
 	
@@ -9,9 +9,9 @@ class sql {
 
 	}
 	public function connection() {
-		$mysql_server = "127.0.0.1";
-		$mysql_user = "root";
-		$mysql_password = "";
+		$mysql_server = "localhost";
+		$mysql_user = "ihelp";
+		$mysql_password = "SdEyXkTwYehQkEhaj3Il";
 		$mysql_database = "ihelp";
 
 		
