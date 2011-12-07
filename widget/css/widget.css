@@ -1,0 +1,31 @@
+#musikhjalpen-widget{
+  width:430px;
+  height:120px;
+  
+  font-family:Arial, Helvetica, sans-serif;
+}
+  #musikhjalpen-widget .widget-container{
+    width:100%;
+    height:100%;
+    padding:10px;
+  }
+    #musikhjalpen-widget .widget-container h3{
+      margin:0;
+      padding:0;
+      font-size:16px;
+    }
+    #musikhjalpen-widget .widget-container span{
+      font-size:14px;
+    }
+    #musikhjalpen-widget .widget-container a{
+      font-family:Arial, Helvetica, sans-serif;
+      font-size:12px;
+      color:#000;
+      text-decoration:none;
+    }
+    #musikhjalpen-widget .widget-container a.button{
+
+    }
+    #musikhjalpen-widget .widget-container p{
+      font-size:12px;
+    }
