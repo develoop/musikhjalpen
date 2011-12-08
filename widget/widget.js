@@ -10,14 +10,14 @@
     if(jq.readyState){
       jq.onreadystatechange = function(){
         if(this.readyState == 'complete' || this.readyState == 'loaded'){
-          scriptLoadHandler;
+          scriptLoadHandler();
         }
       }
     } else {
       jq.onload = scriptLoadHandler;
     }
     
-    document.getElementsByTagName('head')[0].appendChild(jq);
+    document.getElementsByTagName('head')[0].insertBefore(jq, document.getElementsByTagName('script')[0]);
     
   } else {
     jQuery = window.jQuery;

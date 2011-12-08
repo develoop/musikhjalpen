@@ -1,0 +1,11 @@
+ANVÄNDNING
+
+Skapa en div med id musikhjalpen-widget.
+
+<div id="musikhjalpen-widget"></div>
+
+Klistra in följande i <head> sektionen.
+
+<script src="http://www.ihelp.se/musik/widget/widget.js?id=1" type="text/javascript"></script>
+
+Byt ut id=1 mot det id som tillhör dig.
