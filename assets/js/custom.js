@@ -128,22 +128,51 @@ function fetchList(count, callback){
   
 }
 
-function buildList(data){
+function convertToArray(data){
   
-  var html = '';
+  var arr = [];
   
-  $.each(data, function(key, val){
-    html += '\
-        <li data-id="' + key + '">\
-          <h3 class="position">#' + val.position + '</h3>\
-          <h3>' + val.name + '</h3>\
-          <h3>' + val.collected + '</h3>\
-          <p class="click_to_help">Klicka för att hjälpa ' + val.name + '</p>\
-        </li>\
-    ';
+  $.each(data, function(key, value){
+    
+    arr[key] = {
+      id: value.id,
+      name: value.name,
+      collected: value.collected,
+      position: value.position
+    };
+    
   });
   
+  return arr;
+  
+}
+
+function sortByPosition(a, b){
+  
+  return a.position - b.position;
+  
+}
+
+function buildList(data){
+  
+  data = convertToArray(data);
+  data.sort(sortByPosition);
+  
+  html = '';
+  
+  for(var i=0;i<data.length - 1;i++){
+    html += '\
+      <li data-id="' + data[i].id + '">\
+        <h3 class="name">' + data[i].name + '</h3>\
+        <h3 class="collected">' + data[i].collected + ' kr</h3>\
+        <h3 class="position">#' + data[i].position + '</h3>\
+        <p class="click_to_help">Klicka för att hjälpa ' + data[i].name + '!</p>\
+      </li>\
+    ';
+  }
+  
   return html;
+  
 }
 
 function attachToplistEvents(){

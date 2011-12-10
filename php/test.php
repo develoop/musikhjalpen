@@ -10,47 +10,54 @@ if(isset($_GET['id'])){
   $json->collected = "12.045";
 } else {
   $json = array(
+    '2' => array(
+      'id'        => '1',
+      'name'      => 'Jason',
+      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
+      'collected' => '10.987',
+      'position'  => '7'
+    ),
+    '3' => array(
+      'id'        => '2',
+      'name'      => 'Jason',
+      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
+      'collected' => '10.987',
+      'position'  => '6'
+    ),
+    '4' => array(
+      'id'        => '3',
+      'name'      => 'Per',
+      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
+      'collected' => '10.987',
+      'position'  => '1'
+    ),
+    '5' => array(
+      'id'        => '4',
+      'name'      => 'Jason',
+      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
+      'collected' => '10.987',
+      'position'  => '4'
+    ),
+    '6' => array(
+      'id'        => '5',
+      'name'      => 'Jason',
+      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
+      'collected' => '10.987',
+      'position'  => '3'
+    ),
+    '7' => array(
+      'id'        => '6',
+      'name'      => 'Jason',
+      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
+      'collected' => '10.987',
+      'position'  => '2'
+    ),
     '1' => array( // Detta är bloggarens id
+      'id'        => '7',
       'name'      => 'Alex Schulman',
       'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
       'collected' => '12.045',
-      'position'  => '1'
-    ),
-    '2' => array(
-      'name'      => 'Jason',
-      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
-      'collected' => '10.987',
-      'position'  => '2'
-    ),
-    '3' => array(
-      'name'      => 'Jason',
-      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
-      'collected' => '10.987',
-      'position'  => '2'
-    ),
-    '4' => array(
-      'name'      => 'Jason',
-      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
-      'collected' => '10.987',
-      'position'  => '2'
-    ),
-    '5' => array(
-      'name'      => 'Jason',
-      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
-      'collected' => '10.987',
-      'position'  => '2'
-    ),
-    '6' => array(
-      'name'      => 'Jason',
-      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
-      'collected' => '10.987',
-      'position'  => '2'
-    ),
-    '7' => array(
-      'name'      => 'Jason',
-      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
-      'collected' => '10.987',
-      'position'  => '2'
+      'position'  => '5'
     )
   ); 
 }
