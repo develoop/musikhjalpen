@@ -298,6 +298,7 @@
 
   $(document).bind('close.facebox', function() {
     $(document).unbind('keydown.facebox')
+    $('#facebox form').validationEngine('hideAll');
     $('#facebox').fadeOut(function() {
       $('#facebox .content').removeClass().addClass('content')
       $('#facebox .loading').remove()

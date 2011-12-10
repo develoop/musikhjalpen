@@ -21,6 +21,36 @@ if(isset($_GET['id'])){
       'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
       'collected' => '10.987',
       'position'  => '2'
+    ),
+    '3' => array(
+      'name'      => 'Jason',
+      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
+      'collected' => '10.987',
+      'position'  => '2'
+    ),
+    '4' => array(
+      'name'      => 'Jason',
+      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
+      'collected' => '10.987',
+      'position'  => '2'
+    ),
+    '5' => array(
+      'name'      => 'Jason',
+      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
+      'collected' => '10.987',
+      'position'  => '2'
+    ),
+    '6' => array(
+      'name'      => 'Jason',
+      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
+      'collected' => '10.987',
+      'position'  => '2'
+    ),
+    '7' => array(
+      'name'      => 'Jason',
+      'img'       => 'http://4.bp.blogspot.com/_L6zQ-ugpWic/TQFLWbdzl6I/AAAAAAAAACI/InMyQ9RXD48/s1600/alex.jpg',
+      'collected' => '10.987',
+      'position'  => '2'
     )
   ); 
 }

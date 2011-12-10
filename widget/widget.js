@@ -87,13 +87,22 @@
   
   function renderWidget(data){
     jQuery('#musikhjalpen-widget').append('\
-      <div class="widget-container">\
-        <h3>' + data.namn + '</h3>\
-        <a href="' + data.url + '">' + data.url + '</a>\
-        <span>Insamlat hittills:<b>' + data.insamling + '</b></span><br />\
-        <a class="button" href="http://www.ihelp.se/inamlingsskript.php?id=' + data.id + '">Hjälp till</a>\
+      <div id="mhwdgt">\
+        <h3 class="name">' + data.namn + '</h3>\
+        <h3 class="position">' + data.position +'</h3>\
+        <h4 class="amount">' + data.saldo + '</h4>\
       </div>\
     ');
+    
+    attachClickEvent(data.url);
+  }
+  
+  function attachClickEvent(url){
+    $('#mhwdgt').click(function(e){
+      
+      window.open(url);
+      
+    });
   }
   
 })();
