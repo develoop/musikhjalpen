@@ -10,7 +10,7 @@
 		public function getInfo($id, $callback) {
 			$info = $this->sql->_array("SELECT * FROM bloggare WHERE id = '$id'");
 			if(!empty($info)) {
-			$url = "http://www.ihelp.se/musik/index.php?open=" . $info[0]['id'];
+			$url = "http://www.ihelp.se/musikhjalpen/index.php?open=" . $info[0]['id'];
 			$position = $this->getPosition($info[0]['insamling']);
 			$saldo = $this->sql->_cell("SELECT saldo FROM insamlingar WHERE id = '" . $info[0]['insamling'] . "'");
 			$json = $callback . '({"id":"' . $info[0]['id'] . '","namn":"' . $info[0]['namn'] . '","position":"' . $position . '", "saldo":"' . $saldo . '","insamling":"' . $info[0]['insamling'] . '","url":"' . $url . '"})';
